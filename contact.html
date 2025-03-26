@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - YONATHANS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+   /* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #ddd;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(45deg, #ff6ed3, #3b5998); /* Gradient of red and blue */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff6ed3;
+    color: #fff;
+    border-color: #ff6ed3;
+    transform: scale(1.1);
+}
+
+/* Section Styling */
+section {
+    padding: 60px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* About Page */
+#about {
+    background: linear-gradient(45deg, #2c3e50, #16a085); /* Dark teal and green gradient */
+    color: #fff;
+    animation: slideUp 1.5s ease-out;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    color: #ff6ed3;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* My Work Page */
+#portfolio {
+    background: linear-gradient(45deg, #34495e, #2980b9); /* Dark blue and green gradient */
+    animation: slideUp 1.5s ease-out;
+}
+
+#portfolio h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project h3 {
+    color: #ff6ed3;
+    font-size: 1.8rem;
+}
+
+.project p {
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Contact Page */
+#contact {
+    background: linear-gradient(45deg, #8e44ad, #f39c12); /* Purple and Orange gradient */
+    animation: slideUp 1.5s ease-out;
+}
+
+#contact h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    color: #fff;
+    font-size: 1rem;
+}
+
+form input, form textarea {
+    padding: 10px;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    background-color: #ff6ed3;
+}
+
+form button {
+    padding: 12px 25px;
+    background-color: #ff6ed3;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: #6e7dff;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+    </style>
+   
+    <header>
+        <h1>Yonathan</h1>
+        <nav>
+            <ul>
+                <li><a href="myportfolio.html" class="button-link">Home</a></li>
+                <li><a href="about.html" class="button-link">About Me</a></li>
+                <li><a href="work.html" class="button-link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you have any questions about my portfolio including wonders contact me through <strong>webackenzo600@gmail.com</strong> or fill out the contact form below.</p>
+        <form action="#">
+            <label for="name"><b>Name</b>:</label>
+            <input type="text" id="name" name="name" required>
+
+        
+
+            <label for="message"><b>Message</b>:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Your Name. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
